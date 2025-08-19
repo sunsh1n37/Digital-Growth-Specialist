@@ -29,14 +29,38 @@
       -webkit-text-fill-color: transparent;
       margin-bottom: 0.2rem;
     }
-    .hero .tagline, .hero .subtitle { text-align: center; margin-bottom: 0.3rem; }
-    .hero-intro {
-      text-align: center;
-      max-width: 650px;
-      margin: 0.5rem auto 1rem auto;
-      color: #5e524c;
-      line-height: 1.5;
-    }
+    .hero .tagline {
+  text-align: center;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: 1.5px;
+  color: #a66a50;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  transition: color 0.3s ease;
+}
+
+.hero .tagline:hover {
+  color: #c68f72;
+}
+
+.hero .subtitle {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #7c6c64;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.hero-intro {
+  text-align: center;
+  max-width: 650px;
+  margin: 0.5rem auto 1rem auto;
+  color: #5e524c;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
 
     /* ---------------- Section Titles ---------------- */
     h2 {
@@ -164,20 +188,42 @@
     .whatsapp-button { background-color: #25D366; color: #fff; }
     .whatsapp-button:hover { background-color: #1ebe5d; }
 
+   .visit-button {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 12px;
+  background-color: #a66a50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  transition: background 0.2s ease;
+}
+
+.visit-button:hover {
+  background-color: #c68f72;
+}
+
+
     /* ---------------- Footer ---------------- */
     .footer {
-      text-align: center;
-      margin-top: 2rem;
-      font-size: 0.95rem;
-      color: #6b5e57;
-    }
-    .footer a {
-      color: #a66a50;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.2s ease;
-    }
-    .footer a:hover { color: #c68f72; }
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #c68f72; /* white text for contrast */
+  background-color: #ffffff; /* darker, rich brown */
+  padding: 15px 10px;
+  border-radius: 8px;
+}
+.footer a {
+  color: #c68f72; /* soft accent for links */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+.footer a:hover {
+  color: #ffffff;
+}
   </style>
 </head>
 
@@ -227,7 +273,13 @@
         <div class="project-card"><p>Youtube banner</p><img src="project1.jpg" alt="Project 1" class="small-img"></div>
         <div class="project-card"><p>Event Flyer</p><img src="project2.png" alt="Project 2" class="small-img"></div>
         <div class="project-card"><p>Ebook cover</p><img src="project3.png" alt="Project 3" class="small-img"></div>
-        <div class="project-card"><p>Event Flyer</p><img src="project4.png" alt="Project 4" class="small-img"></div>
+        
+        <div class="project-card">
+             <p>Website</p>
+             <img src="project4.jpg" alt="Project 4" class="small-img">
+              <a href="https://tmistudios.xyz" target="_blank" class="visit-button">Visit Site</a>
+              
+    </div>
       </div>
     </section>
 
@@ -238,7 +290,7 @@
         <p>💬 Enquire on WhatsApp</p>
         <a href="https://wa.me/27847517475" target="_blank" class="whatsapp-button">WhatsApp</a>
       </div>
-      <p>Ready to start your project? Fill in the form to get started — no spam, ever.</p>
+      <p>Ready to start your project?</p>
       <a href="https://form.jotform.com/252303182302038" target="_blank" class="cta-button">Book a Free Strategy Call</a>
     </section>
 
